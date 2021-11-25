@@ -1,0 +1,38 @@
+POST http://127.0.0.1:8080/v1/api/tasks
+Content-Type: application/json
+
+{
+  "task_type": "TASK",
+  "summary": "Smith",
+  "description": "jane.smith@company.com",
+  "status": "OPEN"
+}
+
+
+
+
+###
+PUT http://127.0.0.1:8080/v1/api/tasks/2
+Content-Type: application/json
+
+{
+  "task_type": "BUG",
+  "summary": "Smith",
+  "description": "jan1e.smith@company.com",
+  "status": "REOPENED"
+}
+
+###
+GET http://127.0.0.1:8080/v1/api/tasks
+Accept: application/json
+
+###
+GET http://127.0.0.1:8080/v1/api/tasks/2
+
+###
+GET http://127.0.0.1:8080/v1/api/tasks/22
+
+###
+DELETE http://127.0.0.1:8080/v1/api/2
+
+
